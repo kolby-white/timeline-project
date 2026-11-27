@@ -1,0 +1,306 @@
+{
+    "events":  [
+                   {
+                       "start_date":  {
+                                          "year":  "1938"
+                                      },
+                       "end_date":  {
+                                        "year":  "1940"
+                                    },
+                       "display_date":  "1938-1940",
+                       "text":  {
+                                    "headline":  "Prewar American Femininity",
+                                    "text":  "\u003cp\u003eBy the late 1930s, American women\u0027s fashion emphasized a more defined and traditionally feminine silhouette. Dresses commonly featured fitted waists, longer skirts, and curved shapes, while padded shoulders and puffed sleeves added structure. Eveningwear often featured elegant, figure-hugging designs, including bias-cut gowns that followed the body\u0027s natural curves.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Shim, Gun Woo. \u0026ldquo;1938.\u0026rdquo; \u003cem\u003eFashion History Timeline\u003c/em\u003e. Fashion Institute of Technology, August 5, 2019. \u003ca href=\"https://fashionhistory.fitnyc.edu/1938-2/\" target=\"_blank\" rel=\"noopener\"\u003ehttps://fashionhistory.fitnyc.edu/1938-2/\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://vintagedancer.com/wp-content/uploads/1938-Mongomery-day-dress.jpg",
+                                     "credit":  "Image via Vintage Dancer",
+                                     "thumbnail":  "https://vintagedancer.com/wp-content/uploads/1938-Mongomery-day-dress.jpg"
+                                 },
+                       "background":  {
+                                          "color":  "#354331"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1941"
+                                      },
+                       "display_date":  "1941",
+                       "text":  {
+                                    "headline":  "US Enters WWII",
+                                    "text":  "\u003cp\u003eOn December 7, 1941, Japan launched a surprise attack on the American naval base at Pearl Harbor, Hawaii. The following day, President Franklin D. Roosevelt addressed Congress, and the United States formally declared war on Japan. Germany and Italy declared war on the United States on December 11, bringing the country fully into World War II.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e National Museum of American History. \u0026ldquo;America Enters the War.\u0026rdquo; \u003cem\u003eThe Price of Freedom: Americans at War\u003c/em\u003e. Smithsonian Institution, n.d. \u003ca href=\"https://americanhistory.si.edu/explore/exhibitions/price-of-freedom/online/world-war-ii/america-enters-war\" target=\"_blank\" rel=\"noopener\"\u003ehttps://americanhistory.si.edu/explore/exhibitions/price-of-freedom/online/world-war-ii/america-enters-war\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://cdn.britannica.com/81/71381-050-0042470B/battleship-attack-Pearl-Harbor-Japanese-Hawaii-December-7-1941.jpg?w=300",
+                                     "credit":  "Image via Britannica",
+                                     "thumbnail":  "https://cdn.britannica.com/81/71381-050-0042470B/battleship-attack-Pearl-Harbor-Japanese-Hawaii-December-7-1941.jpg?w=300"
+                                 },
+                       "background":  {
+                                          "color":  "#354331"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1942"
+                                      },
+                       "display_date":  "1942",
+                       "text":  {
+                                    "headline":  "Regulation L-85",
+                                    "text":  "\u003cp\u003eOn April 8, 1942, the War Production Board issued General Limitation Order L-85, introducing restrictions on the production of women\u0027s clothing to conserve materials for the war effort. With resources such as wool, cotton, silk, and rubber needed for military supplies, civilian clothing manufacturers were required to adjust their designs and production methods.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://digital.library.unt.edu/ark:/67531/metadc382/m1/1/med_res/",
+                                     "credit":  "Image via UNT Digital Library",
+                                     "thumbnail":  "https://digital.library.unt.edu/ark:/67531/metadc382/m1/1/med_res/"
+                                 },
+                       "background":  {
+                                          "color":  "#788064"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1942"
+                                      },
+                       "end_date":  {
+                                        "year":  "1945"
+                                    },
+                       "display_date":  "1942-1945",
+                       "text":  {
+                                    "headline":  "Rosie the Riveter",
+                                    "text":  "\u003cp\u003eDuring World War II, millions of American women entered the workforce to support wartime production. Women worked in factories, shipyards, and aircraft plants, taking on jobs that had traditionally been held by men. The image of \"Rosie the Riveter\" became a popular symbol of these women and their contributions to the war effort. Women\u0027s workwear reflected the practical demands of industrial labor. Coveralls, trousers, sturdy shoes, and headscarves became common among women working in factories. Some employers provided specialized uniforms, while others adapted men\u0027s work clothing for female employees. These garments prioritized safety and functionality over traditional expectations of feminine appearance.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Murphy, Sara. \u0026ldquo;Rosie, Wendy, and Government Girls: The Women behind the War.\u0026rdquo; National Museum of American History, Smithsonian Institution, March 16, 2022. \u003ca href=\"https://americanhistory.si.edu/explore/stories/rosie-wendy-and-government-girls\" target=\"_blank\" rel=\"noopener\"\u003ehttps://americanhistory.si.edu/explore/stories/rosie-wendy-and-government-girls\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://media.defense.gov/2019/Mar/04/2002104138/825/780/0/190304-F-F3336-1002.JPG",
+                                     "credit":  "Image via U.S. Department of War",
+                                     "thumbnail":  "https://media.defense.gov/2019/Mar/04/2002104138/825/780/0/190304-F-F3336-1002.JPG"
+                                 },
+                       "background":  {
+                                          "color":  "#788064"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1945"
+                                      },
+                       "display_date":  "1945",
+                       "text":  {
+                                    "headline":  "End of WWII",
+                                    "text":  "\u003cp\u003eWorld War II officially ended in 1945, following Germany\u0027s surrender in May and Japan\u0027s formal surrender on September 2. Across the United States, celebrations marked the return of peace and the beginning of postwar reconstruction.\u003c/p\u003e\u003cp\u003eThe transition to peacetime also brought significant changes for American women. As servicemen returned home and wartime industries reduced production, many women were encouraged or pressured to leave industrial jobs and return to domestic roles. Some women continued working, but employment opportunities and expectations began shifting toward prewar gender norms.\u003c/p\u003e\u003cp\u003eThese changes also affected fashion. Wartime clothing restrictions and material shortages gradually gave way to greater availability of fabrics and more elaborate designs. The end of the war set the stage for a renewed emphasis on traditional femininity in American fashion, which would become especially visible with Christian Dior\u0027s New Look in 1947\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e The National WWII Museum. \u0026ldquo;Gender on the Home Front.\u0026rdquo; The National WWII Museum, July 11, 2018. \u003ca href=\"https://www.nationalww2museum.org/war/articles/gender-home-front\" target=\"_blank\" rel=\"noopener\"\u003ehttps://www.nationalww2museum.org/war/articles/gender-home-front\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://static.time.com/v3/assets/bltea6093859af6183b/blt730934faca1d9556/69876166f887dcc79ae87950/v-j-day-01.jpg?branch=production\u0026width=1080\u0026quality=75\u0026auto=webp\u0026crop=3:2",
+                                     "credit":  "Image via TIME",
+                                     "thumbnail":  "https://static.time.com/v3/assets/bltea6093859af6183b/blt730934faca1d9556/69876166f887dcc79ae87950/v-j-day-01.jpg?branch=production\u0026width=1080\u0026quality=75\u0026auto=webp\u0026crop=3:2"
+                                 },
+                       "background":  {
+                                          "color":  "#788064"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1947"
+                                      },
+                       "display_date":  "1947",
+                       "text":  {
+                                    "headline":  "Dior\u0027s New Look",
+                                    "text":  "\u003cp\u003eOn February 12, 1947, French fashion designer Christian Dior presented his first collection in Paris. Known as the \"New Look,\" the collection introduced a silhouette featuring rounded shoulders, a fitted bodice, a narrow waist, and a long, full skirt. This style marked a dramatic departure from the simpler, more practical clothing associated with wartime restrictions.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Charleston, Beth Duncuff, based on original work by Harold Koda. \u0026ldquo;Christian Dior (1905\u0026ndash;1957).\u0026rdquo; \u003cem\u003eHeilbrunn Timeline of Art History\u003c/em\u003e. The Metropolitan Museum of Art, October 2004. \u003ca href=\"https://www.metmuseum.org/essays/christian-dior-1905-1957\" target=\"_blank\" rel=\"noopener\"\u003ehttps://www.metmuseum.org/essays/christian-dior-1905-1957\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://assets.vogue.com/photos/65fa1c3dae3f106cc13717a5/master/w_960,c_limit/0407-VO-FB27.02.jpg",
+                                     "credit":  "Image via Vogue",
+                                     "thumbnail":  "https://assets.vogue.com/photos/65fa1c3dae3f106cc13717a5/master/w_960,c_limit/0407-VO-FB27.02.jpg"
+                                 },
+                       "background":  {
+                                          "color":  "#E5DED0"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1950"
+                                      },
+                       "display_date":  "1950s",
+                       "text":  {
+                                    "headline":  "Postwar Domestic Ideal",
+                                    "text":  "\u003cp\u003eDuring the 1950s, American popular culture increasingly promoted an ideal of femininity centered on marriage, motherhood, and domestic life. Suburban living, growing consumer culture, and the baby boom contributed to an image of the ideal American woman as a wife and homemaker. Television programs, advertisements, and women\u0027s magazines reinforced these expectations, often portraying women as responsible for maintaining attractive homes and families. Fashion reflected these ideals through coordinated outfits, fitted dresses, full skirts, tailored suits, and carefully styled hair and makeup. Women\u0027s clothing was often marketed as a way to express femininity, respectability, and social status. The growing availability of household goods and consumer products also encouraged women to participate in an expanding market for fashion and beauty. However, the image of the full-time housewife did not represent every woman\u0027s experience. Many women continued working outside the home, and working-class women and women of color were often excluded from the idealized suburban lifestyle. Despite these differences, the domestic ideal remained a powerful influence on American culture and women\u0027s fashion throughout the decade.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Khan Academy. \u0026ldquo;Women in the 1950s.\u0026rdquo; \u003cem\u003eUS History: 1950s America\u003c/em\u003e. Khan Academy, n.d. \u003ca href=\"https://www.khanacademy.org/humanities/us-history/postwarera/1950s-america/a/women-in-the-1950s\" target=\"_blank\" rel=\"noopener\"\u003ehttps://www.khanacademy.org/humanities/us-history/postwarera/1950s-america/a/women-in-the-1950s\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://clickamericana.com/wp-content/uploads/housewife-joy-feb-1950.jpg",
+                                     "credit":  "Image via Click Americana",
+                                     "thumbnail":  "https://clickamericana.com/wp-content/uploads/housewife-joy-feb-1950.jpg"
+                                 },
+                       "background":  {
+                                          "color":  "#E5DED0"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1960"
+                                      },
+                       "display_date":  "Early 1960s",
+                       "text":  {
+                                    "headline":  "Youth Culture and Changing Fashion",
+                                    "text":  "\u003cp\u003eDuring the early 1960s, American fashion began shifting away from the more structured and traditionally feminine styles associated with the previous decade. A growing youth culture influenced popular trends, as teenagers and young adults gained greater economic independence and became an increasingly important market for the fashion industry. Young people looked to music, popular culture, and emerging subcultures for inspiration rather than simply following the styles of older generations. The British Mod movement, with its modern silhouettes, bold colors, and streamlined designs, helped inspire a new generation of fashion. These influences contributed to a broader movement toward more casual, youthful clothing and greater individual expression. Although traditional styles remained popular, fashion was becoming less centered on a single ideal of mature femininity. Younger women increasingly embraced clothing that reflected their own identities and changing expectations of women\u0027s roles in society.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Reddy, Karina. \u0026ldquo;1960\u0026ndash;1969.\u0026rdquo; \u003cem\u003eFashion History Timeline\u003c/em\u003e. Fashion Institute of Technology, July 23, 2019; updated August 18, 2020. \u003ca href=\"https://fashionhistory.fitnyc.edu/1960-1969/\" target=\"_blank\" rel=\"noopener\"\u003ehttps://fashionhistory.fitnyc.edu/1960-1969/\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://dustfactoryvintage.com/news/wp-content/uploads/2023/02/60sfashion-1024x683.png.webp",
+                                     "credit":  "Image via Dust Factory Vintage",
+                                     "thumbnail":  "https://dustfactoryvintage.com/news/wp-content/uploads/2023/02/60sfashion-1024x683.png.webp"
+                                 },
+                       "background":  {
+                                          "color":  "#9B4245"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1963"
+                                      },
+                       "end_date":  {
+                                        "year":  "1966"
+                                    },
+                       "display_date":  "1963-1966",
+                       "text":  {
+                                    "headline":  "Second-Wave Feminism Gains Momentum",
+                                    "text":  "\u003cp\u003eDuring the 1960s, the growing women\u0027s rights movement began challenging traditional expectations of women\u0027s roles in American society. In 1963, Betty Friedan published The Feminine Mystique, criticizing the belief that marriage and homemaking were women\u0027s primary sources of fulfillment. The book resonated with many women who felt limited by these expectations and helped bring renewed attention to gender inequality. Several legal developments strengthened the movement. The Equal Pay Act of 1963 addressed wage discrimination, while Title VII of the Civil Rights Act of 1964 prohibited employment discrimination based on sex. In 1965, the Supreme Court\u0027s decision in Griswold v. Connecticut protected married couples\u0027 access to contraception. These changes contributed to a growing demand for independence and equality. Although there was not yet one distinctly feminist style of dress, traditional expectations surrounding women\u0027s appearance and femininity increasingly became subjects of debate. Fashion would become another way women explored identity, challenged conventions, and expressed changing social attitudes.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Alexander, Kerri Lee. \u0026ldquo;Feminism: The Second Wave.\u0026rdquo; National Women\u0026rsquo;s History Museum, June 18, 2020. \u003ca href=\"https://www.womenshistory.org/exhibits/feminism-second-wave\" target=\"_blank\" rel=\"noopener\"\u003ehttps://www.womenshistory.org/exhibits/feminism-second-wave\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://static.time.com/v3/assets/bltea6093859af6183b/blt4d5401f422435b32/69886090524fc07383df4303/strike.jpeg?branch=production\u0026width=1080\u0026quality=75\u0026auto=webp\u0026crop=3:2",
+                                     "credit":  "Image via TIME",
+                                     "thumbnail":  "https://static.time.com/v3/assets/bltea6093859af6183b/blt4d5401f422435b32/69886090524fc07383df4303/strike.jpeg?branch=production\u0026width=1080\u0026quality=75\u0026auto=webp\u0026crop=3:2"
+                                 },
+                       "background":  {
+                                          "color":  "#9B4245"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1966"
+                                      },
+                       "display_date":  "1966",
+                       "text":  {
+                                    "headline":  "National Organization for Women Founded",
+                                    "text":  "\u003cp\u003eOn June 30, 1966, the National Organization for Women (NOW) was founded in Washington, D.C., by women who wanted to take more direct action against gender discrimination. Among its founders were writer Betty Friedan and civil rights activist Pauli Murray. The organization emerged from frustration with the limited enforcement of existing protections against sex discrimination, particularly in employment.\u003c/p\u003e\u003cp\u003eNOW\u0027s original Statement of Purpose called for women to participate fully in American society as equal partners with men. Its goals addressed employment, education, legal and political rights, and other areas where women faced unequal treatment. In October 1966, NOW held its first formal organizing conference and elected Friedan as its first president.\u003c/p\u003e\u003cp\u003eThe organization helped give the women\u0027s rights movement a more coordinated national presence. Its emphasis on equal opportunity and independence challenged traditional assumptions about women\u0027s place in American society and contributed to broader changes in expectations surrounding women\u0027s lives.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e National Organization for Women. \u0026ldquo;Founding.\u0026rdquo; National Organization for Women, n.d. \u003ca href=\"https://now.org/about/history/founding-2/\" target=\"_blank\" rel=\"noopener\"\u003ehttps://now.org/about/history/founding-2/\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://www.economist.com/cdn-cgi/image/width=960,quality=80,format=auto/content-assets/images/20230902_CUP501.jpg",
+                                     "credit":  "Image via The Economist",
+                                     "thumbnail":  "https://www.economist.com/cdn-cgi/image/width=960,quality=80,format=auto/content-assets/images/20230902_CUP501.jpg"
+                                 },
+                       "background":  {
+                                          "color":  "#9B4245"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1968"
+                                      },
+                       "display_date":  "Late 1960s",
+                       "text":  {
+                                    "headline":  "Women\u0027s Liberation and Fashion",
+                                    "text":  "\u003cp\u003eBy the late 1960s, the women\u0027s liberation movement was bringing greater attention to the ways traditional expectations of femininity shaped women\u0027s lives. Activists increasingly questioned beauty standards, restrictive clothing, and the pressure placed on women to maintain particular appearances. Clothing and personal presentation became part of broader discussions about independence, equality, and control over women\u0027s bodies.\u003c/p\u003e\u003cp\u003eSome women embraced practical or less traditionally feminine styles, including trousers, jeans, unisex clothing, and more natural hairstyles. Others continued wearing fashionable or traditionally feminine clothing while rejecting the idea that appearance determined their worth or abilities. There was no single way to dress as a feminist, and women disagreed about whether fashion represented personal freedom or reinforced expectations imposed on women.\u003c/p\u003e\u003cp\u003eThese debates made fashion an important part of feminist expression. What women wore could communicate resistance, individuality, and changing ideas about femininity.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Rabinovitch-Fox, Einav. \u0026ldquo;This Is What a Feminist Looks Like: Fashion in the Era of Women\u0026rsquo;s Liberation.\u0026rdquo; Chapter 5 in \u003cem\u003eDressed for Freedom: The Fashionable Politics of American Feminism\u003c/em\u003e, 154\u0026ndash;188. Urbana: University of Illinois Press, 2021. \u003ca href=\"https://www.press.uillinois.edu/books/catalog/87kmg2yq9780252044014.html\" target=\"_blank\" rel=\"noopener\"\u003ehttps://www.press.uillinois.edu/books/catalog/87kmg2yq9780252044014.html\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://yesterdaytoday.net/wp-content/uploads/2022/03/3-133.jpg",
+                                     "credit":  "Image via Yesterday Today",
+                                     "thumbnail":  "https://yesterdaytoday.net/wp-content/uploads/2022/03/3-133.jpg"
+                                 },
+                       "background":  {
+                                          "color":  "#A9C5D5"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1970"
+                                      },
+                       "display_date":  "Early 1970s",
+                       "text":  {
+                                    "headline":  "Pantsuits and Workplace Fashion",
+                                    "text":  "\u003cp\u003eDuring the early 1970s, women\u0027s growing participation in the workforce contributed to changing expectations about professional clothing. For decades, many American workplaces required women to wear skirts or dresses, while trousers were considered too informal or inappropriate for office settings. As women challenged traditional gender roles, these restrictions increasingly came under scrutiny.\u003c/p\u003e\u003cp\u003ePantsuits offered a practical alternative to conventional skirts and dresses while allowing women to adopt elements of traditionally masculine business attire. Designers introduced tailored trousers, matching jackets, and coordinated separates in a variety of colors, patterns, and silhouettes. These styles reflected women\u0027s growing interest in clothing that combined professionalism, comfort, and personal expression.\u003c/p\u003e\u003cp\u003eHowever, acceptance was not immediate or universal. Some employers continued enforcing dress codes that restricted women from wearing pants, and women sometimes faced criticism for dressing in ways considered too masculine. The growing popularity of pantsuits nevertheless represented a visible change in how American women could present themselves in professional spaces.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Reddy, Karina. \u0026ldquo;1970\u0026ndash;1979.\u0026rdquo; \u003cem\u003eFashion History Timeline\u003c/em\u003e. Fashion Institute of Technology, October 3, 2019; updated August 18, 2020. \u003ca href=\"https://fashionhistory.fitnyc.edu/1970-1979/\" target=\"_blank\" rel=\"noopener\"\u003ehttps://fashionhistory.fitnyc.edu/1970-1979/\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://clickamericana.com/wp-content/uploads/Retro-1970s-suits-for-women-plaid-and-black-with-wide-color-1105x1536.jpg",
+                                     "credit":  "Image via Click Americana",
+                                     "thumbnail":  "https://clickamericana.com/wp-content/uploads/Retro-1970s-suits-for-women-plaid-and-black-with-wide-color-1105x1536.jpg"
+                                 },
+                       "background":  {
+                                          "color":  "#263E59"
+                                      }
+                   },
+                   {
+                       "start_date":  {
+                                          "year":  "1972"
+                                      },
+                       "end_date":  {
+                                        "year":  "1975"
+                                    },
+                       "display_date":  "1972-1975",
+                       "text":  {
+                                    "headline":  "Feminist Fashion and Changing Social Expectations",
+                                    "text":  "\u003cp\u003eBy the mid-1970s, American women\u0027s fashion reflected a wider range of social roles and changing expectations of femininity. As women pursued greater independence in the workplace and in their personal lives, clothing increasingly offered opportunities to balance practicality, comfort, and individual expression.\u003c/p\u003e\u003cp\u003eTrousers and pantsuits had become more acceptable for both professional and formal settings, while styles such as Diane von Fürstenberg\u0027s wrap dress offered women clothing that could transition between work and social occasions. Fashion also embraced a variety of silhouettes, fabrics, and influences, reflecting a growing emphasis on personal choice rather than one universally accepted ideal of femininity.\u003c/p\u003e\u003cp\u003eThese changes did not mean that traditional expectations had disappeared. Women continued to face discrimination and pressure surrounding their appearance, and fashion remained connected to social standards. However, by 1975, women\u0027s clothing offered more possibilities for expressing independence, identity, and changing ideas about women\u0027s place in American society. The relationship between fashion and femininity had become more varied, reflecting the broader social transformations of the previous four decades.\u003c/p\u003e\u003cp class=\"tl-source\"\u003e\u003cstrong\u003eSource:\u003c/strong\u003e Reddy, Karina. \u0026ldquo;1970\u0026ndash;1979.\u0026rdquo; \u003cem\u003eFashion History Timeline\u003c/em\u003e. Fashion Institute of Technology, October 3, 2019; updated August 18, 2020. \u003ca href=\"https://fashionhistory.fitnyc.edu/1970-1979/\" target=\"_blank\" rel=\"noopener\"\u003ehttps://fashionhistory.fitnyc.edu/1970-1979/\u003c/a\u003e.\u003c/p\u003e"
+                                },
+                       "media":  {
+                                     "url":  "https://fiftydresses.com/wp-content/uploads/2013/08/wrap-dress-6-dvf-cover.jpg?w=466",
+                                     "credit":  "Image via Fifty Dresses",
+                                     "thumbnail":  "https://fiftydresses.com/wp-content/uploads/2013/08/wrap-dress-6-dvf-cover.jpg?w=466"
+                                 },
+                       "background":  {
+                                          "color":  "#263E59"
+                                      }
+                   }
+               ],
+    "eras":  [
+                 {
+                     "start_date":  {
+                                        "year":  "1938"
+                                    },
+                     "end_date":  {
+                                      "year":  "1945"
+                                  },
+                     "text":  {
+                                  "headline":  "Part I: War and Transformation",
+                                  "text":  "As the United States entered World War II, women\u0027s roles in American society began to change. Wartime employment, material shortages, and practical clothing requirements challenged traditional expectations of femininity and transformed everyday fashion."
+                              }
+                 },
+                 {
+                     "start_date":  {
+                                        "year":  "1946"
+                                    },
+                     "end_date":  {
+                                      "year":  "1959"
+                                  },
+                     "text":  {
+                                  "headline":  "Part II: The Return to Femininity",
+                                  "text":  "Following World War II, American culture increasingly emphasized marriage, motherhood, and traditional femininity. Fashion reflected this shift through renewed interest in elegant silhouettes, consumer culture, and the idealized image of the suburban homemaker, even as many women continued working outside the home."
+                              }
+                 },
+                 {
+                     "start_date":  {
+                                        "year":  "1960"
+                                    },
+                     "end_date":  {
+                                      "year":  "1969"
+                                  },
+                     "text":  {
+                                  "headline":  "Part III: Challenging Expectations",
+                                  "text":  "During the 1960s, youth culture and the growing women\u0027s rights movement challenged established ideas about gender and femininity. As women pushed for greater independence and equality, fashion became an increasingly visible expression of changing identities, social attitudes, and resistance to traditional expectations."
+                              }
+                 },
+                 {
+                     "start_date":  {
+                                        "year":  "1970"
+                                    },
+                     "end_date":  {
+                                      "year":  "1975"
+                                  },
+                     "text":  {
+                                  "headline":  "Part IV: Redefining Women\u0027s Fashion",
+                                  "text":  "By the 1970s, changing social roles and feminist activism had expanded the possibilities for American women\u0027s fashion. From pantsuits and workplace clothing to more varied expressions of personal style, fashion increasingly reflected women\u0027s pursuit of independence, equality, and individual choice."
+                              }
+                 }
+             ],
+    "title":  {
+                  "text":  {
+                               "headline":  "American Women\u0027s Fashion (1938–1975)",
+                               "text":  "How did changes in American women\u0027s social roles between 1938 and 1975 influence women\u0027s fashion, and how did fashion reflect changing expectations of femininity, independence, and gender equality?"
+                           }
+              }
+}

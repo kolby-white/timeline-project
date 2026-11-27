@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>American Women's Fashion (1938–1975)</title>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <style>
+    html, body { margin: 0; height: 100%; background: #fff; }
+    #timeline-embed { width: 100%; height: 650px; }
+    /* Source citations sit at the end of each slide, set apart from the narrative text. */
+    .tl-text-content p.tl-source {
+      margin-top: 1.25em;
+      padding-top: 0.75em;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      font-size: 0.85em;
+      line-height: 1.45;
+    }
+    .tl-text-content p.tl-source a { word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div id="timeline-embed"></div>
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <script>
+    // Same options as the original Google Sheets embed.
+    window.timeline = new TL.Timeline('timeline-embed', 'data/timeline.json', {
+      font: 'default',
+      language: 'en',
+      initial_zoom: 2
+    });
+  </script>
+</body>
+</html>
