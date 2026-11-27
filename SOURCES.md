@@ -44,3 +44,8 @@ If you have the original captions or source pages, I can add creator, title, and
 - In entries 5 and 7, the citation sat in the middle of the text. It now appears at the end of the slide.
 - Wrapped paragraphs in `<p>` tags so line breaks still display once a slide contains HTML. The wording is unchanged.
 - No historical text, dates, headlines, images, colors, or slide order were changed. The original data is preserved in `data/original/timeline-original.csv`.
+
+## Image file changes
+
+- **Rosie the Riveter:** cropped a thin white scan border off the right edge (and one pixel column on the left). The cropped copy is stored in the project as `images/rosie-the-riveter-welder.jpg`. Original: https://media.defense.gov/2019/Mar/04/2002104138/825/780/0/190304-F-F3336-1002.JPG (U.S. military photograph, public domain). Re-hosting it also fixes the image failing to load, because defense.gov blocks some outside requests.
+- **US Enters WWII:** the image link now requests Britannica's 1000px version of the same photo (`?w=1000`) instead of the 300px thumbnail.
