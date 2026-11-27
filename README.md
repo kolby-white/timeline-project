@@ -1,6 +1,6 @@
 # American Women's Fashion (1938–1975)
 
-An interactive [TimelineJS](https://timeline.knight.lab.northwestern.edu/) timeline. It asks how changing social roles for American women between 1938 and 1975 shaped women's fashion, across 13 entries in four eras.
+An interactive [TimelineJS](https://timeline.knightlab.com/) timeline. It asks how changing social roles for American women between 1938 and 1975 shaped women's fashion, across 13 entries in four eras.
 
 - [Original Google Sheets embed](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSZwW_uMHT_H850iKbjTQ_zjHXvvk5Aqi0NZTcZTq3gUGGXa-OK5RBlXaGWwtiSNj4h_Zqt1vIGgT_n&font=Default&lang=en&initial_zoom=2&width=100%25&height=650)
 - Source and citation review: [SOURCES.md](SOURCES.md)
