@@ -151,6 +151,87 @@
     .tl-timeera .tl-timeera-content-container .tl-timeera-content .tl-timeera-text h2.tl-headline.tl-headline-fadeout:after {
       background: none !important;
     }
+
+    /* ---------- Title slide ----------
+       Deep navy "poster" with a fine pinstripe, a green / white / red banner stripe, and a
+       strip of four photographs (one per era) introducing the subject. Contrast on the
+       lightest part of the gradient: title/subtitle 10.2:1, question 7.8:1. */
+    #timeline-embed .tl-slide.tl-slide-titleslide {
+      background-color: #172437;
+      background-image:
+        repeating-linear-gradient(135deg, rgba(243, 238, 226, 0.03) 0 2px, transparent 2px 10px),
+        radial-gradient(ellipse at 25% 35%, #22385A 0%, #172437 65%);
+    }
+    #timeline-embed .tl-slide.tl-slide-titleslide::before {
+      content: "";
+      position: absolute; left: 0; right: 0; top: 0; height: 10px; z-index: 1;
+      background: linear-gradient(to right,
+        var(--army) 0 33.33%, var(--cream) 33.33% 66.66%, var(--oxblood) 66.66% 100%);
+    }
+    #timeline-embed .tl-slide-titleslide .tl-slide-content-container { vertical-align: middle; }
+    .title-nowrap { white-space: nowrap; }
+    #timeline-embed .tl-slide-titleslide .tl-text h2.tl-headline-title {
+      font-size: 58px !important;
+      line-height: 1.0 !important;
+      letter-spacing: 0.01em;
+      margin: 0 0 14px !important;
+    }
+    #timeline-embed .tl-slide-titleslide .tl-text-content p.title-subtitle {
+      display: inline-block;
+      margin: 0 0 16px;
+      padding-top: 12px;
+      border-top: 3px solid var(--cream);
+      font-size: 15px !important;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+    #timeline-embed .tl-slide-titleslide .tl-text-content p.title-question {
+      max-width: 760px;
+      margin: 0 0 22px;
+      font-size: 17px !important;
+      font-style: italic;
+      color: #D9D2C3 !important;
+    }
+
+    .title-eras {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 !important; padding: 0 !important; list-style: none;
+    }
+    .title-eras button {
+      display: block; width: 100%; padding: 0; margin: 0;
+      border: 2px solid var(--cream); border-radius: 0;
+      background: none; cursor: pointer; text-align: left;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    }
+    .title-eras button:hover, .title-eras button:focus-visible {
+      outline: 3px solid var(--cream); outline-offset: 2px;
+    }
+    .title-eras img {
+      display: block; width: 100%; height: 118px; object-fit: cover; object-position: center 20%;
+      filter: grayscale(100%) contrast(1.05);
+    }
+    #timeline-embed .title-eras .title-era-caption {
+      display: block; padding: 5px 8px;
+      font-size: 11px !important; font-weight: 700; line-height: 1.3;
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    #timeline-embed .title-eras .era-1 .title-era-caption { background: var(--army); color: var(--cream) !important; }
+    #timeline-embed .title-eras .era-2 .title-era-caption { background: var(--parchment); color: var(--ink) !important; }
+    #timeline-embed .title-eras .era-3 .title-era-caption { background: var(--oxblood); color: var(--cream) !important; }
+    #timeline-embed .title-eras .era-4 .title-era-caption { background: #2E4A6E; color: var(--cream) !important; }
+
+    /* Narrow screens: smaller title, two-by-two photo grid */
+    #timeline-embed.tl-skinny .tl-slide-titleslide .tl-text h2.tl-headline-title,
+    #timeline-embed.tl-layout-portrait .tl-slide-titleslide .tl-text h2.tl-headline-title { font-size: 34px !important; }
+    #timeline-embed.tl-skinny .tl-slide-titleslide .tl-text-content p.title-question,
+    #timeline-embed.tl-layout-portrait .tl-slide-titleslide .tl-text-content p.title-question { font-size: 15px !important; }
+    #timeline-embed.tl-skinny .title-eras, #timeline-embed.tl-layout-portrait .title-eras { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    #timeline-embed.tl-skinny .title-eras img, #timeline-embed.tl-layout-portrait .title-eras img { height: 72px; }
+    #timeline-embed.tl-skinny .tl-slide-titleslide .title-nowrap { white-space: normal; }
   </style>
 </head>
 <body>
@@ -190,6 +271,23 @@
           eraNames[s.unique_id] = s === data.title ? null : eraOf(s, data.eras);
         });
 
+        // Title slide photo strip: one existing timeline image per era. Each tile is a
+        // button that jumps to that entry.
+        var romans = ['I', 'II', 'III', 'IV'];
+        var titleTiles = [
+          { id: 'slide-prewar-american-femininity', alt: 'Women in late-1930s day dresses' },
+          { id: 'slide-dior-s-new-look', alt: 'A model in Dior’s 1947 New Look suit on a staircase' },
+          { id: 'slide-women-s-liberation-and-fashion', alt: 'Young women in miniskirts marching with protest signs' },
+          { id: 'slide-pantsuits-and-workplace-fashion', alt: 'A woman in a 1970s plaid pantsuit' }
+        ].map(function (t, i) {
+          var ev = data.events.filter(function (e) { return e.unique_id === t.id; })[0];
+          var era = data.eras[i];
+          return {
+            id: t.id, alt: t.alt, img: ev && ev.media && ev.media.url, headline: ev && ev.text.headline,
+            caption: 'Part ' + romans[i] + ' · ' + era.start_date.year + '–' + era.end_date.year
+          };
+        });
+
         // Same options as the original Google Sheets embed.
         var timeline = new TL.Timeline('timeline-embed', data, {
           font: 'default',
@@ -212,6 +310,37 @@
               label.className = 'tl-era-label';
               label.textContent = era;
               container.insertBefore(label, container.firstChild);
+            }
+            if (s === data.title && container && !container.querySelector('.title-nowrap')) {
+              // Keep the date range on one line so the title breaks as
+              // "American Women's Fashion / (1938–1975)".
+              var h = container.querySelector('h2');
+              if (h) h.innerHTML = h.innerHTML.replace(/(\(\d{4}–\d{4}\))/, '<span class="title-nowrap">$1</span>');
+            }
+            if (s === data.title && container && !container.querySelector('.title-eras')) {
+              var list = document.createElement('ul');
+              list.className = 'title-eras';
+              list.setAttribute('aria-label', 'The four eras of the timeline');
+              titleTiles.forEach(function (t, i) {
+                if (!t.img) return;
+                var li = document.createElement('li');
+                li.className = 'era-' + (i + 1);
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.setAttribute('aria-label', t.caption + ': go to “' + t.headline + '”');
+                var img = document.createElement('img');
+                img.src = t.img; img.alt = t.alt; img.loading = 'lazy';
+                // Hide a tile whose image host refuses to serve it, rather than show a broken image.
+                img.onerror = function () { li.style.display = 'none'; };
+                var cap = document.createElement('span');
+                cap.className = 'title-era-caption';
+                cap.textContent = t.caption;
+                btn.appendChild(img); btn.appendChild(cap);
+                btn.addEventListener('click', function () { timeline.goToId(t.id); });
+                li.appendChild(btn);
+                list.appendChild(li);
+              });
+              container.appendChild(list);
             }
           });
         }
