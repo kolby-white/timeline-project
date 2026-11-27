@@ -1,0 +1,109 @@
+{
+  "_note": "Every point paraphrases text already in the timeline (data/timeline.csv). 'sources' lists the timeline slides each era's summary draws on; they become links that open that slide.",
+  "topics": [
+    { "key": "trends", "label": "Major fashion trends and clothing styles" },
+    { "key": "roles", "label": "Women's social roles and expectations" },
+    { "key": "reflection", "label": "How fashion reflected those roles" }
+  ],
+  "eras": [
+    {
+      "id": "part-1",
+      "numeral": "I",
+      "title": "War and Transformation",
+      "years": "1938–1945",
+      "chapter": "chapter-part-i-war-and-transformation",
+      "trends": [
+        "Late-1930s dresses emphasized a defined, traditionally feminine silhouette: fitted waists, longer skirts, padded shoulders, and puffed sleeves.",
+        "Regulation L-85 (1942) restricted the production of women's clothing to conserve wool, cotton, silk, and rubber, so manufacturers adjusted their designs.",
+        "Women in factories wore coveralls, trousers, sturdy shoes, and headscarves, sometimes adapted from men's work clothing."
+      ],
+      "roles": [
+        "After the United States entered World War II, millions of women took jobs in factories, shipyards, and aircraft plants that had traditionally been held by men.",
+        "“Rosie the Riveter” became a popular symbol of women's contributions to the war effort."
+      ],
+      "reflection": [
+        "Wartime employment, material shortages, and practical clothing requirements challenged traditional expectations of femininity.",
+        "Workwear prioritized safety and functionality over traditional expectations of feminine appearance."
+      ],
+      "sources": [
+        "slide-prewar-american-femininity",
+        "slide-us-enters-wwii",
+        "slide-regulation-l-85",
+        "slide-rosie-the-riveter"
+      ]
+    },
+    {
+      "id": "part-2",
+      "numeral": "II",
+      "title": "The Return to Femininity",
+      "years": "1946–1959",
+      "chapter": "chapter-part-ii-the-return-to-femininity",
+      "trends": [
+        "Christian Dior's 1947 New Look introduced rounded shoulders, a fitted bodice, a narrow waist, and a long, full skirt, a dramatic departure from wartime clothing.",
+        "1950s fashion favored coordinated outfits, fitted dresses, full skirts, tailored suits, and carefully styled hair and makeup."
+      ],
+      "roles": [
+        "Popular culture promoted an ideal of femininity centered on marriage, motherhood, and domestic life, reinforced by television, advertising, and women's magazines.",
+        "The ideal did not reflect every woman's experience: many women kept working outside the home, and working-class women and women of color were often excluded from the suburban ideal."
+      ],
+      "reflection": [
+        "Renewed interest in elegant silhouettes and consumer culture mirrored the idealized image of the suburban homemaker.",
+        "Clothing was often marketed as a way to express femininity, respectability, and social status."
+      ],
+      "sources": [
+        "slide-dior-s-new-look",
+        "slide-postwar-domestic-ideal"
+      ]
+    },
+    {
+      "id": "part-3",
+      "numeral": "III",
+      "title": "Challenging Expectations",
+      "years": "1960–1969",
+      "chapter": "chapter-part-iii-challenging-expectations",
+      "trends": [
+        "Fashion moved away from the structured styles of the 1950s toward more casual, youthful clothing.",
+        "The British Mod movement's modern silhouettes, bold colors, and streamlined designs inspired a new generation.",
+        "By the late 1960s, some women adopted trousers, jeans, unisex clothing, and more natural hairstyles."
+      ],
+      "roles": [
+        "Betty Friedan's The Feminine Mystique (1963) challenged the belief that marriage and homemaking were women's primary sources of fulfillment.",
+        "The Equal Pay Act (1963), Title VII of the Civil Rights Act (1964), and the founding of NOW (1966) challenged sex discrimination, particularly in employment.",
+        "The women's liberation movement questioned beauty standards, restrictive clothing, and the pressure placed on women's appearance."
+      ],
+      "reflection": [
+        "Younger women increasingly chose clothing that reflected their own identities rather than a single ideal of mature femininity.",
+        "There was no single way to dress as a feminist; what women wore could communicate resistance, individuality, and changing ideas about femininity."
+      ],
+      "sources": [
+        "slide-youth-culture-and-changing-fashion",
+        "slide-second-wave-feminism-gains-momentum",
+        "slide-national-organization-for-women-founded",
+        "slide-women-s-liberation-and-fashion"
+      ]
+    },
+    {
+      "id": "part-4",
+      "numeral": "IV",
+      "title": "Redefining Women's Fashion",
+      "years": "1970–1975",
+      "chapter": "chapter-part-iv-redefining-women-s-fashion",
+      "trends": [
+        "Pantsuits with tailored trousers, matching jackets, and coordinated separates offered an alternative to skirts and dresses.",
+        "Diane von Fürstenberg's wrap dress could move between work and social occasions, and fashion embraced a variety of silhouettes, fabrics, and influences."
+      ],
+      "roles": [
+        "Women's growing participation in the workforce challenged workplace dress codes that required skirts or dresses.",
+        "Women pursued greater independence at work and in their personal lives, though discrimination and pressure about appearance continued."
+      ],
+      "reflection": [
+        "Pantsuits let women adopt elements of traditionally masculine business attire, although some employers still restricted women from wearing pants and women sometimes faced criticism for dressing in ways considered too masculine.",
+        "By 1975, fashion emphasized personal choice rather than one universally accepted ideal of femininity."
+      ],
+      "sources": [
+        "slide-pantsuits-and-workplace-fashion",
+        "slide-feminist-fashion-and-changing-social-expectations"
+      ]
+    }
+  ]
+}

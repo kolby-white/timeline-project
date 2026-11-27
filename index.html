@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>American Women's Fashion (1938–1975)</title>
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <link rel="stylesheet" href="components/era-compare.css">
   <style>
     /*
       Palette: army green -> parchment white -> oxblood red -> navy blue, following the
@@ -26,8 +27,9 @@
       --nav-text-soft: #5E584F;
     }
     html, body { margin: 0; height: 100%; background: #F4EFE4; }
-    /* Fill the browser window (the original embed was a fixed 650px), with a floor for short windows. */
-    #timeline-embed { width: 100%; height: 100vh; min-height: 600px; }
+    /* Fill the browser window (the original embed was a fixed 650px), with a floor for short windows.
+       72px is left so the top of the era comparison section below peeks into view. */
+    #timeline-embed { width: 100%; height: calc(100vh - 72px); min-height: 600px; }
 
     /* ---------- Media: all images in black and white ---------- */
     .tl-media img.tl-media-image,
@@ -338,6 +340,29 @@
 </head>
 <body>
   <div id="timeline-embed"></div>
+
+  <!-- Era comparison: separate from the timeline (components/era-compare.*, data/era-comparison.json) -->
+  <section id="era-compare" class="ec" aria-labelledby="ec-title">
+    <header class="ec-header">
+      <div class="ec-inner">
+        <h2 class="ec-title" id="ec-title">Fashion Through Changing Times</h2>
+        <p class="ec-lede">Compare two of the exhibit's four eras side by side: what women wore, what was expected of them, and how their clothing reflected those expectations.</p>
+      </div>
+    </header>
+    <div class="ec-body">
+      <div class="ec-inner">
+        <ol class="ec-steps">
+          <li><b>1</b> Choose an era under &ldquo;First era.&rdquo;</li>
+          <li><b>2</b> Choose a different era under &ldquo;Second era.&rdquo;</li>
+          <li><b>3</b> Read the comparison, or open an entry in the timeline above.</li>
+        </ol>
+        <div class="ec-pickers"></div>
+        <div class="ec-actions"><button type="button" class="ec-button ec-clear" hidden>Clear selection</button></div>
+        <div class="ec-results" aria-live="polite"></div>
+        <p class="ec-note">Summaries are drawn from the timeline entries listed under each era. See the timeline slides for full text and sources.</p>
+      </div>
+    </div>
+  </section>
   <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <script>
     // Relative luminance (WCAG) of a #RRGGBB color, used to pick light or dark text.
@@ -547,5 +572,6 @@
         }, 500);
       });
   </script>
+  <script src="components/era-compare.js"></script>
 </body>
 </html>

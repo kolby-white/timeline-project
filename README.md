@@ -30,3 +30,10 @@ An interactive [TimelineJS](https://timeline.knightlab.com/) timeline. It asks h
 - **Not by color alone:** each slide shows a text label naming its era, such as "Part II: The Return to Femininity". The era bands on the time bar keep their text names.
 - **Images:** all images are shown in black and white with a CSS filter. The original files are unchanged.
 - **Chapter dividers:** TimelineJS normally shows the four era rows only as bands on the time bar. `scripts/build.ps1` also turns each era row into a chapter-divider slide at the start of its period, using the same title, dates, and description. Each era row's `Background` column in the CSV sets its divider's color.
+
+## Era comparison ("Fashion Through Changing Times")
+
+A section below the timeline lets visitors pick two of the four eras and compare their fashion trends, women's social roles, and how fashion reflected those roles.
+
+- Content: `data/era-comparison.json`. Each point paraphrases existing timeline entries, and each era lists the entries it draws on. These appear as links that open the slide in the timeline.
+- Code: `components/era-compare.js` and `components/era-compare.css`. No libraries; it does not change the timeline.
