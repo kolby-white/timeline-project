@@ -54,7 +54,11 @@
       color: var(--ink-soft) !important;
       text-shadow: none !important;
     }
-    .tl-slide .tl-text-content p { line-height: 1.55; }
+    /* Consistent paragraph rhythm on every slide */
+    #timeline-embed .tl-slide .tl-text-content p {
+      line-height: 1.55;
+      margin: 0 0 0.9em;
+    }
     .tl-slide .tl-credit { font-size: 12px; letter-spacing: 0.02em; }
     .tl-slide .tl-text a { text-decoration: underline; text-underline-offset: 2px; }
 
@@ -72,8 +76,8 @@
     }
 
     /* Source block at the end of each slide */
-    .tl-text-content p.tl-source {
-      margin-top: 1.25em;
+    #timeline-embed .tl-slide .tl-text-content p.tl-source {
+      margin: 1.25em 0 0;
       padding-top: 0.75em;
       border-top: 1px solid currentColor;
       font-size: 0.85em;
