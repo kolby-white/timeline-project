@@ -27,3 +27,4 @@ An interactive [TimelineJS](https://timeline.knight.lab.northwestern.edu/) timel
 - **Contrast:** every slide's text meets WCAG AA (4.5:1 or higher), and most meet AAA (7:1). Light backgrounds use dark ink text and dark backgrounds use cream text. The ratios are listed at the top of the `<style>` block in `index.html`.
 - **Not by color alone:** each slide shows a text label naming its era, such as "Part II: The Return to Femininity". The era bands on the time bar keep their text names.
 - **Images:** all images are shown in black and white with a CSS filter. The original files are unchanged.
+- **Chapter dividers:** TimelineJS normally shows the four era rows only as bands on the time bar. `scripts/build.ps1` also turns each era row into a chapter-divider slide at the start of its period, using the same title, dates, and description. Each era row's `Background` column in the CSV sets its divider's color.

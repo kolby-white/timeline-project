@@ -53,11 +53,20 @@ foreach ($r in $rows) {
     'era'   { $tl.eras += [ordered]@{
                 start_date = DateObj $r.Year $r.Month $r.Day $r.Time $null
                 end_date   = DateObj $r.'End Year' $r.'End Month' $r.'End Day' $r.'End Time' $null
-                text       = [ordered]@{ headline = $r.Headline; text = $r.Text } } }
+                text       = [ordered]@{ headline = $r.Headline; text = $r.Text } }
+              # TimelineJS shows eras only as bands on the time bar. Also add each era as a
+              # chapter-divider slide at the start of its period (same title, dates, and text).
+              # It is listed before that year's entries so it sorts first.
+              $ch = Slide $r
+              $ch.unique_id = 'chapter-' + ($ch.unique_id -replace '^slide-', '')
+              $ch.Remove('end_date')
+              $ch.text.text = "<p>$($r.Text)</p>"
+              $tl.events += $ch }
     default { $tl.events += Slide $r }
   }
 }
 
 $json = $tl | ConvertTo-Json -Depth 10
 [IO.File]::WriteAllText((Join-Path $root 'data/timeline.json'), $json, (New-Object Text.UTF8Encoding $false))
-"Built data/timeline.json: $($tl.events.Count) events, $($tl.eras.Count) eras, title: $([bool]$tl.title)"
+$chapterCount = @($tl.events | ? { $_.unique_id -like "chapter-*" }).Count
+"Built data/timeline.json: $($tl.events.Count - $chapterCount) entries, $chapterCount chapter dividers, $($tl.eras.Count) eras, title: $([bool]$tl.title)"

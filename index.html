@@ -224,6 +224,74 @@
     #timeline-embed .title-eras .era-3 .title-era-caption { background: var(--oxblood); color: var(--cream) !important; }
     #timeline-embed .title-eras .era-4 .title-era-caption { background: #2E4A6E; color: var(--cream) !important; }
 
+    /* ---------- Chapter dividers (Part I–IV) ----------
+       Flat era color, an inset frame, a large faint Roman numeral, centered type, and no
+       media, so they read as section breaks rather than events. Backgrounds are in the era
+       rows of data/timeline.csv. Contrast: title 7.8–10.1:1, description 6.2–7.4:1. */
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+      clip: rect(0 0 0 0); white-space: nowrap;
+    }
+    #timeline-embed .tl-slide.tl-chapter::before {
+      content: ""; position: absolute; inset: 18px; z-index: 0; pointer-events: none;
+      border: 1px solid currentColor; outline: 1px solid currentColor; outline-offset: -7px;
+      opacity: 0.45;
+    }
+    #timeline-embed .tl-slide.tl-chapter.tone-dark::before { color: var(--cream); }
+    #timeline-embed .tl-slide.tl-chapter.tone-light::before { color: var(--ink); }
+    #timeline-embed .tl-slide.tl-chapter::after {
+      content: attr(data-numeral);
+      position: absolute; right: 6%; top: 50%; transform: translateY(-55%); z-index: 0;
+      font-family: Georgia, "Times New Roman", serif; font-weight: 700;
+      font-size: 340px; line-height: 1; pointer-events: none;
+      opacity: 0.07;
+    }
+    #timeline-embed .tl-slide.tl-chapter.tone-dark::after { color: var(--cream); }
+    #timeline-embed .tl-slide.tl-chapter.tone-light::after { color: var(--ink); }
+    #timeline-embed .tl-chapter .tl-slide-content-container { position: relative; z-index: 1; }
+    #timeline-embed .tl-chapter .tl-text {
+      width: 100% !important; max-width: 680px; margin: 0 auto; float: none !important; text-align: center;
+    }
+    #timeline-embed .tl-chapter .tl-text-headline-container { display: flex; flex-direction: column; align-items: center; }
+    #timeline-embed .tl-chapter h2.tl-headline { order: 1; margin: 0 !important; }
+    #timeline-embed .tl-chapter h3.tl-headline-date {
+      order: 2;
+      margin: 18px 0 16px !important; padding: 8px 0 0;
+      border-top: 2px solid currentColor;
+      font-size: 22px !important; letter-spacing: 0.22em; font-weight: 700;
+    }
+    #timeline-embed .tl-chapter .chapter-kicker {
+      display: block; margin-bottom: 6px;
+      font-size: 16px; letter-spacing: 0.3em; text-transform: uppercase;
+    }
+    #timeline-embed .tl-chapter .chapter-title {
+      display: block; font-size: 54px; line-height: 1.02; text-transform: uppercase;
+    }
+    #timeline-embed .tl-chapter .tl-text-content p {
+      font-size: 17px !important; line-height: 1.6; margin: 0 auto !important; max-width: 600px;
+    }
+    #timeline-embed .tl-chapter.tone-dark .tl-text-content p { color: #DCD5C4 !important; }
+    #timeline-embed .tl-chapter.tone-light .tl-text-content p { color: #3F3931 !important; }
+
+    .chapter-steps {
+      display: flex; justify-content: center; gap: 6px;
+      margin: 0 0 22px !important; padding: 0 !important; list-style: none;
+    }
+    #timeline-embed .tl-chapter .chapter-steps li {
+      min-width: 38px; padding: 3px 6px; margin: 0;
+      border: 1px solid currentColor;
+      font-size: 12px !important; font-weight: 700; letter-spacing: 0.08em; line-height: 1.4;
+    }
+    #timeline-embed .tl-chapter.tone-dark .chapter-steps li.is-current { background: var(--cream); color: #26231F !important; opacity: 1; }
+    #timeline-embed .tl-chapter.tone-light .chapter-steps li.is-current { background: var(--ink); color: var(--cream) !important; opacity: 1; }
+
+    /* Chapters appear as slides only; the era bands already mark them on the time bar. */
+    .tl-timemarker[id^="chapter-"] { display: none !important; }
+
+    #timeline-embed.tl-skinny .tl-chapter .chapter-title { font-size: 34px; }
+    #timeline-embed.tl-skinny .tl-slide.tl-chapter::after { font-size: 200px; }
+    #timeline-embed.tl-skinny .tl-slide.tl-chapter::before { inset: 10px; }
+
     /* Narrow screens: smaller title, two-by-two photo grid */
     #timeline-embed.tl-skinny .tl-slide-titleslide .tl-text h2.tl-headline-title,
     #timeline-embed.tl-layout-portrait .tl-slide-titleslide .tl-text h2.tl-headline-title { font-size: 34px !important; }
@@ -265,15 +333,20 @@
       .then(function (data) {
         var slides = [data.title].concat(data.events);
         // Work these out before TimelineJS converts the date fields into its own objects.
-        var tones = {}, eraNames = {};
+        var tones = {}, eraNames = {}, chapters = {};
+        var romans = ['I', 'II', 'III', 'IV'];
         slides.forEach(function (s) {
           tones[s.unique_id] = toneOf(s);
-          eraNames[s.unique_id] = s === data.title ? null : eraOf(s, data.eras);
+          if (/^chapter-/.test(s.unique_id)) {
+            chapters[s.unique_id] = Object.keys(chapters).length;   // 0..3, in timeline order
+          } else {
+            eraNames[s.unique_id] = s === data.title ? null : eraOf(s, data.eras);
+          }
         });
+        var chapterIds = Object.keys(chapters);
 
         // Title slide photo strip: one existing timeline image per era. Each tile is a
-        // button that jumps to that entry.
-        var romans = ['I', 'II', 'III', 'IV'];
+        // button that jumps to that era's chapter divider.
         var titleTiles = [
           { id: 'slide-prewar-american-femininity', alt: 'Women in late-1930s day dresses' },
           { id: 'slide-dior-s-new-look', alt: 'A model in Dior’s 1947 New Look suit on a staircase' },
@@ -283,7 +356,7 @@
           var ev = data.events.filter(function (e) { return e.unique_id === t.id; })[0];
           var era = data.eras[i];
           return {
-            id: t.id, alt: t.alt, img: ev && ev.media && ev.media.url, headline: ev && ev.text.headline,
+            id: chapterIds[i], alt: t.alt, img: ev && ev.media && ev.media.url, headline: era.text.headline,
             caption: 'Part ' + romans[i] + ' · ' + era.start_date.year + '–' + era.end_date.year
           };
         });
@@ -310,6 +383,9 @@
               label.className = 'tl-era-label';
               label.textContent = era;
               container.insertBefore(label, container.firstChild);
+            }
+            if (s.unique_id in chapters && container && !el.classList.contains('tl-chapter')) {
+              decorateChapter(el, container, chapters[s.unique_id]);
             }
             if (s === data.title && container && !container.querySelector('.title-nowrap')) {
               // Keep the date range on one line so the title breaks as
@@ -343,6 +419,40 @@
               container.appendChild(list);
             }
           });
+        }
+        // Chapter divider: splits "Part I: War and Transformation" into a small "Part I"
+        // line and a large title (same words; the colon stays for screen readers), and adds
+        // a four-step progress marker naming the chapter in text.
+        function decorateChapter(el, container, index) {
+          el.classList.add('tl-chapter', 'chapter-' + (index + 1));
+          el.setAttribute('data-numeral', romans[index]);
+          var h = container.querySelector('h2.tl-headline');
+          if (h) {
+            var parts = h.textContent.split(/:\s*/);
+            if (parts.length > 1) {
+              h.innerHTML = '';
+              var kicker = document.createElement('span');
+              kicker.className = 'chapter-kicker';
+              kicker.textContent = parts[0];
+              var colon = document.createElement('span');
+              colon.className = 'visually-hidden';
+              colon.textContent = ': ';
+              var title = document.createElement('span');
+              title.className = 'chapter-title';
+              title.textContent = parts.slice(1).join(': ');
+              h.appendChild(kicker); h.appendChild(colon); h.appendChild(title);
+            }
+          }
+          var steps = document.createElement('ol');
+          steps.className = 'chapter-steps';
+          steps.setAttribute('aria-label', 'Chapter ' + (index + 1) + ' of ' + romans.length);
+          romans.forEach(function (r, i) {
+            var li = document.createElement('li');
+            li.textContent = r;
+            if (i === index) { li.className = 'is-current'; li.setAttribute('aria-current', 'step'); }
+            steps.appendChild(li);
+          });
+          container.insertBefore(steps, container.firstChild);
         }
         function setCurrent(id) {
           var tone = tones[id] || 'light';

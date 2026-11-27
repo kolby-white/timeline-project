@@ -1,6 +1,20 @@
 {
     "events":  [
                    {
+                       "unique_id":  "chapter-part-i-war-and-transformation",
+                       "start_date":  {
+                                          "year":  "1938"
+                                      },
+                       "display_date":  "1938-1945",
+                       "text":  {
+                                    "headline":  "Part I: War and Transformation",
+                                    "text":  "\u003cp\u003eAs the United States entered World War II, women\u0027s roles in American society began to change. Wartime employment, material shortages, and practical clothing requirements challenged traditional expectations of femininity and transformed everyday fashion.\u003c/p\u003e"
+                                },
+                       "background":  {
+                                          "color":  "#3B432E"
+                                      }
+                   },
+                   {
                        "unique_id":  "slide-prewar-american-femininity",
                        "start_date":  {
                                           "year":  "1938"
@@ -83,6 +97,20 @@
                                       }
                    },
                    {
+                       "unique_id":  "chapter-part-ii-the-return-to-femininity",
+                       "start_date":  {
+                                          "year":  "1946"
+                                      },
+                       "display_date":  "1946-1959",
+                       "text":  {
+                                    "headline":  "Part II: The Return to Femininity",
+                                    "text":  "\u003cp\u003eFollowing World War II, American culture increasingly emphasized marriage, motherhood, and traditional femininity. Fashion reflected this shift through renewed interest in elegant silhouettes, consumer culture, and the idealized image of the suburban homemaker, even as many women continued working outside the home.\u003c/p\u003e"
+                                },
+                       "background":  {
+                                          "color":  "#D8CFBA"
+                                      }
+                   },
+                   {
                        "unique_id":  "slide-end-of-wwii",
                        "start_date":  {
                                           "year":  "1945"
@@ -137,6 +165,20 @@
                                  },
                        "background":  {
                                           "color":  "#ECE5D5"
+                                      }
+                   },
+                   {
+                       "unique_id":  "chapter-part-iii-challenging-expectations",
+                       "start_date":  {
+                                          "year":  "1960"
+                                      },
+                       "display_date":  "1960-1969",
+                       "text":  {
+                                    "headline":  "Part III: Challenging Expectations",
+                                    "text":  "\u003cp\u003eDuring the 1960s, youth culture and the growing women\u0027s rights movement challenged established ideas about gender and femininity. As women pushed for greater independence and equality, fashion became an increasingly visible expression of changing identities, social attitudes, and resistance to traditional expectations.\u003c/p\u003e"
+                                },
+                       "background":  {
+                                          "color":  "#6B2B2B"
                                       }
                    },
                    {
@@ -216,6 +258,20 @@
                                  },
                        "background":  {
                                           "color":  "#C2CFD7"
+                                      }
+                   },
+                   {
+                       "unique_id":  "chapter-part-iv-redefining-women-s-fashion",
+                       "start_date":  {
+                                          "year":  "1970"
+                                      },
+                       "display_date":  "1970-1975",
+                       "text":  {
+                                    "headline":  "Part IV: Redefining Women\u0027s Fashion",
+                                    "text":  "\u003cp\u003eBy the 1970s, changing social roles and feminist activism had expanded the possibilities for American women\u0027s fashion. From pantsuits and workplace clothing to more varied expressions of personal style, fashion increasingly reflected women\u0027s pursuit of independence, equality, and individual choice.\u003c/p\u003e"
+                                },
+                       "background":  {
+                                          "color":  "#2E4A6E"
                                       }
                    },
                    {
