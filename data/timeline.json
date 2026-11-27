@@ -1,6 +1,7 @@
 {
     "events":  [
                    {
+                       "unique_id":  "slide-prewar-american-femininity",
                        "start_date":  {
                                           "year":  "1938"
                                       },
@@ -18,10 +19,11 @@
                                      "thumbnail":  "https://vintagedancer.com/wp-content/uploads/1938-Mongomery-day-dress.jpg"
                                  },
                        "background":  {
-                                          "color":  "#354331"
+                                          "color":  "#2F3A2C"
                                       }
                    },
                    {
+                       "unique_id":  "slide-us-enters-wwii",
                        "start_date":  {
                                           "year":  "1941"
                                       },
@@ -36,10 +38,11 @@
                                      "thumbnail":  "https://cdn.britannica.com/81/71381-050-0042470B/battleship-attack-Pearl-Harbor-Japanese-Hawaii-December-7-1941.jpg?w=300"
                                  },
                        "background":  {
-                                          "color":  "#354331"
+                                          "color":  "#2F3A2C"
                                       }
                    },
                    {
+                       "unique_id":  "slide-regulation-l-85",
                        "start_date":  {
                                           "year":  "1942"
                                       },
@@ -54,10 +57,11 @@
                                      "thumbnail":  "https://digital.library.unt.edu/ark:/67531/metadc382/m1/1/med_res/"
                                  },
                        "background":  {
-                                          "color":  "#788064"
+                                          "color":  "#4D5539"
                                       }
                    },
                    {
+                       "unique_id":  "slide-rosie-the-riveter",
                        "start_date":  {
                                           "year":  "1942"
                                       },
@@ -75,10 +79,11 @@
                                      "thumbnail":  "https://media.defense.gov/2019/Mar/04/2002104138/825/780/0/190304-F-F3336-1002.JPG"
                                  },
                        "background":  {
-                                          "color":  "#788064"
+                                          "color":  "#4D5539"
                                       }
                    },
                    {
+                       "unique_id":  "slide-end-of-wwii",
                        "start_date":  {
                                           "year":  "1945"
                                       },
@@ -93,10 +98,11 @@
                                      "thumbnail":  "https://static.time.com/v3/assets/bltea6093859af6183b/blt730934faca1d9556/69876166f887dcc79ae87950/v-j-day-01.jpg?branch=production\u0026width=1080\u0026quality=75\u0026auto=webp\u0026crop=3:2"
                                  },
                        "background":  {
-                                          "color":  "#788064"
+                                          "color":  "#4D5539"
                                       }
                    },
                    {
+                       "unique_id":  "slide-dior-s-new-look",
                        "start_date":  {
                                           "year":  "1947"
                                       },
@@ -111,10 +117,11 @@
                                      "thumbnail":  "https://assets.vogue.com/photos/65fa1c3dae3f106cc13717a5/master/w_960,c_limit/0407-VO-FB27.02.jpg"
                                  },
                        "background":  {
-                                          "color":  "#E5DED0"
+                                          "color":  "#ECE5D5"
                                       }
                    },
                    {
+                       "unique_id":  "slide-postwar-domestic-ideal",
                        "start_date":  {
                                           "year":  "1950"
                                       },
@@ -129,10 +136,11 @@
                                      "thumbnail":  "https://clickamericana.com/wp-content/uploads/housewife-joy-feb-1950.jpg"
                                  },
                        "background":  {
-                                          "color":  "#E5DED0"
+                                          "color":  "#ECE5D5"
                                       }
                    },
                    {
+                       "unique_id":  "slide-youth-culture-and-changing-fashion",
                        "start_date":  {
                                           "year":  "1960"
                                       },
@@ -147,10 +155,11 @@
                                      "thumbnail":  "https://dustfactoryvintage.com/news/wp-content/uploads/2023/02/60sfashion-1024x683.png.webp"
                                  },
                        "background":  {
-                                          "color":  "#9B4245"
+                                          "color":  "#7F3535"
                                       }
                    },
                    {
+                       "unique_id":  "slide-second-wave-feminism-gains-momentum",
                        "start_date":  {
                                           "year":  "1963"
                                       },
@@ -168,10 +177,11 @@
                                      "thumbnail":  "https://static.time.com/v3/assets/bltea6093859af6183b/blt4d5401f422435b32/69886090524fc07383df4303/strike.jpeg?branch=production\u0026width=1080\u0026quality=75\u0026auto=webp\u0026crop=3:2"
                                  },
                        "background":  {
-                                          "color":  "#9B4245"
+                                          "color":  "#7F3535"
                                       }
                    },
                    {
+                       "unique_id":  "slide-national-organization-for-women-founded",
                        "start_date":  {
                                           "year":  "1966"
                                       },
@@ -186,10 +196,11 @@
                                      "thumbnail":  "https://www.economist.com/cdn-cgi/image/width=960,quality=80,format=auto/content-assets/images/20230902_CUP501.jpg"
                                  },
                        "background":  {
-                                          "color":  "#9B4245"
+                                          "color":  "#7F3535"
                                       }
                    },
                    {
+                       "unique_id":  "slide-women-s-liberation-and-fashion",
                        "start_date":  {
                                           "year":  "1968"
                                       },
@@ -204,10 +215,11 @@
                                      "thumbnail":  "https://yesterdaytoday.net/wp-content/uploads/2022/03/3-133.jpg"
                                  },
                        "background":  {
-                                          "color":  "#A9C5D5"
+                                          "color":  "#C2CFD7"
                                       }
                    },
                    {
+                       "unique_id":  "slide-pantsuits-and-workplace-fashion",
                        "start_date":  {
                                           "year":  "1970"
                                       },
@@ -222,10 +234,11 @@
                                      "thumbnail":  "https://clickamericana.com/wp-content/uploads/Retro-1970s-suits-for-women-plaid-and-black-with-wide-color-1105x1536.jpg"
                                  },
                        "background":  {
-                                          "color":  "#263E59"
+                                          "color":  "#1F3149"
                                       }
                    },
                    {
+                       "unique_id":  "slide-feminist-fashion-and-changing-social-expectations",
                        "start_date":  {
                                           "year":  "1972"
                                       },
@@ -243,7 +256,7 @@
                                      "thumbnail":  "https://fiftydresses.com/wp-content/uploads/2013/08/wrap-dress-6-dvf-cover.jpg?w=466"
                                  },
                        "background":  {
-                                          "color":  "#263E59"
+                                          "color":  "#1F3149"
                                       }
                    }
                ],
@@ -298,9 +311,13 @@
                  }
              ],
     "title":  {
+                  "unique_id":  "slide-american-women-s-fashion-1938-1975",
                   "text":  {
                                "headline":  "American Women\u0027s Fashion (1938–1975)",
                                "text":  "How did changes in American women\u0027s social roles between 1938 and 1975 influence women\u0027s fashion, and how did fashion reflect changing expectations of femininity, independence, and gender equality?"
-                           }
+                           },
+                  "background":  {
+                                     "color":  "#F4EFE4"
+                                 }
               }
 }

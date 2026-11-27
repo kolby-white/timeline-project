@@ -20,3 +20,10 @@ An interactive [TimelineJS](https://timeline.knight.lab.northwestern.edu/) timel
 1. Edit `data/timeline.csv`.
 2. Run `powershell -ExecutionPolicy Bypass -File scripts/build.ps1`.
 3. Preview through a local web server, for example `npx serve .` or `python -m http.server`. Opening `index.html` directly as a file blocks the JSON from loading.
+
+## Design and accessibility
+
+- **Palette:** army green (Part I), parchment white (Part II), oxblood red (Part III), and navy blue (Part IV). The late-1960s slide uses a dusty blue as the bridge into Part IV. Slide backgrounds are set in the `Background` column of `data/timeline.csv`.
+- **Contrast:** every slide's text meets WCAG AA (4.5:1 or higher), and most meet AAA (7:1). Light backgrounds use dark ink text and dark backgrounds use cream text. The ratios are listed at the top of the `<style>` block in `index.html`.
+- **Not by color alone:** each slide shows a text label naming its era, such as "Part II: The Return to Femininity". The era bands on the time bar keep their text names.
+- **Images:** all images are shown in black and white with a CSS filter. The original files are unchanged.

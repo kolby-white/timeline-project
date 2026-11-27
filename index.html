@@ -6,29 +6,222 @@
   <title>American Women's Fashion (1938–1975)</title>
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
   <style>
-    html, body { margin: 0; height: 100%; background: #fff; }
+    /*
+      Palette: army green -> parchment white -> oxblood red -> navy blue, following the
+      four eras. Slide backgrounds are set in data/timeline.csv. Every text/background
+      pair below meets WCAG AA (4.5:1) and most meet AAA (7:1):
+        #F3EEE2 on #2F3A2C 10.3 | on #4D5539 6.8 | on #7F3535 7.4 | on #1F3149 11.4
+        #26231F on #ECE5D5 12.5 | on #F4EFE4 13.6 | on #C2CFD7 9.8
+    */
+    :root {
+      --ink: #26231F;          /* text on light backgrounds */
+      --ink-soft: #4E473F;     /* secondary text on light backgrounds */
+      --cream: #F3EEE2;        /* text on dark backgrounds */
+      --army: #4D5539;
+      --parchment: #D8CFBA;
+      --oxblood: #7F3535;
+      --navy: #1F3149;
+      --nav-bg: #EFEADF;
+      --nav-text: #3B3833;
+      --nav-text-soft: #5E584F;
+    }
+    html, body { margin: 0; height: 100%; background: #F4EFE4; }
     #timeline-embed { width: 100%; height: 650px; }
-    /* Source citations sit at the end of each slide, set apart from the narrative text. */
+
+    /* ---------- Media: all images in black and white ---------- */
+    .tl-media img.tl-media-image,
+    .tl-timemarker-media img,
+    .tl-timemarker img {
+      filter: grayscale(100%) contrast(1.05);
+    }
+
+    /* ---------- Slide text: flat, high-contrast text (no glow/shadow) ---------- */
+    /* The #timeline-embed prefix outranks TimelineJS's own !important text rules. */
+    #timeline-embed .tl-slide.tone-dark .tl-text,
+    #timeline-embed .tl-slide.tone-dark .tl-text *,
+    #timeline-embed .tl-slide.tone-dark .tl-credit,
+    #timeline-embed .tl-slide.tone-dark .tl-caption {
+      color: var(--cream) !important;
+      text-shadow: none !important;
+    }
+    #timeline-embed .tl-slide.tone-light .tl-text,
+    #timeline-embed .tl-slide.tone-light .tl-text * {
+      color: var(--ink) !important;
+      text-shadow: none !important;
+    }
+    #timeline-embed .tl-slide.tone-light .tl-credit,
+    #timeline-embed .tl-slide.tone-light .tl-caption {
+      color: var(--ink-soft) !important;
+      text-shadow: none !important;
+    }
+    .tl-slide .tl-text-content p { line-height: 1.55; }
+    .tl-slide .tl-credit { font-size: 12px; letter-spacing: 0.02em; }
+    .tl-slide .tl-text a { text-decoration: underline; text-underline-offset: 2px; }
+
+    /* Era label: names the historical period in text, so period is never shown by color alone. */
+    .tl-era-label {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 3px 10px;
+      font-size: 12px !important;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid currentColor;
+      border-radius: 2px;
+    }
+
+    /* Source block at the end of each slide */
     .tl-text-content p.tl-source {
       margin-top: 1.25em;
       padding-top: 0.75em;
-      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      border-top: 1px solid currentColor;
       font-size: 0.85em;
       line-height: 1.45;
     }
+    .tl-slide.tone-dark .tl-text-content p.tl-source { border-top-color: rgba(243, 238, 226, 0.45); }
+    .tl-slide.tone-light .tl-text-content p.tl-source { border-top-color: rgba(38, 35, 31, 0.35); }
     .tl-text-content p.tl-source a { word-break: break-all; }
+
+    /* ---------- Previous/next slide navigation ---------- */
+    .tl-slidenav-previous .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-title,
+    .tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description {
+      opacity: 0.9 !important;
+    }
+    .tl-slidenav-content-container * { transition: none !important; }
+    body.current-dark .tl-slidenav-content-container .tl-slidenav-icon,
+    body.current-dark .tl-slidenav-content-container .tl-slidenav-title,
+    body.current-dark .tl-slidenav-content-container .tl-slidenav-description {
+      color: var(--cream) !important;
+      text-shadow: none !important;
+    }
+    body.current-light .tl-slidenav-content-container .tl-slidenav-icon,
+    body.current-light .tl-slidenav-content-container .tl-slidenav-title,
+    body.current-light .tl-slidenav-content-container .tl-slidenav-description {
+      color: var(--ink) !important;
+      text-shadow: none !important;
+    }
+
+    /* ---------- Time navigation bar ---------- */
+    .tl-timenav { background-color: var(--nav-bg) !important; }
+    .tl-timeaxis-background { background-color: #E4DED0 !important; }
+    .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick .tl-timeaxis-tick-text,
+    .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick .tl-timeaxis-tick-text {
+      color: var(--nav-text-soft) !important;
+    }
+    .tl-timemarker .tl-timemarker-content-container {
+      background-color: #F8F5EE !important;
+      border-color: #B9B09E !important;
+    }
+    .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline,
+    .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
+      color: var(--nav-text) !important;
+    }
+    .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after {
+      background: linear-gradient(to bottom, rgba(248, 245, 238, 0) 0%, #F8F5EE 80%) !important;
+    }
+    .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
+      background-color: #FFFFFF !important;
+      border-color: var(--nav-text) !important;
+    }
+    .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+      color: #000 !important;
+      font-weight: 700;
+    }
+    .tl-menubar-button { color: var(--nav-text) !important; }
+    .tl-attribution a { color: var(--nav-text-soft) !important; }
+
+    /* Era bands: same palette as the slides, with readable text labels */
+    .tl-timeera.tl-timeera-color1 .tl-timeera-background { background-color: var(--army) !important; }
+    .tl-timeera.tl-timeera-color2 .tl-timeera-background { background-color: var(--parchment) !important; }
+    .tl-timeera.tl-timeera-color3 .tl-timeera-background { background-color: var(--oxblood) !important; }
+    .tl-timeera.tl-timeera-color4 .tl-timeera-background { background-color: var(--navy) !important; }
+    .tl-timeera .tl-timeera-content-container .tl-timeera-content .tl-timeera-text h2.tl-headline {
+      color: var(--cream) !important;
+      font-weight: 700;
+      text-shadow: none !important;
+    }
+    .tl-timeera.tl-timeera-color2 .tl-timeera-content-container .tl-timeera-content .tl-timeera-text h2.tl-headline {
+      color: var(--ink) !important;
+    }
+    .tl-timeera .tl-timeera-content-container .tl-timeera-content .tl-timeera-text h2.tl-headline.tl-headline-fadeout:after {
+      background: none !important;
+    }
   </style>
 </head>
 <body>
   <div id="timeline-embed"></div>
   <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <script>
-    // Same options as the original Google Sheets embed.
-    window.timeline = new TL.Timeline('timeline-embed', 'data/timeline.json', {
-      font: 'default',
-      language: 'en',
-      initial_zoom: 2
-    });
+    // Relative luminance (WCAG) of a #RRGGBB color, used to pick light or dark text.
+    function luminance(hex) {
+      var c = hex.replace('#', '');
+      return [0, 2, 4].map(function (i) {
+        var v = parseInt(c.substr(i, 2), 16) / 255;
+        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+      }).reduce(function (sum, v, i) { return sum + v * [0.2126, 0.7152, 0.0722][i]; }, 0);
+    }
+    function toneOf(slide) {
+      var color = slide.background && slide.background.color;
+      return color && luminance(color) < 0.3 ? 'dark' : 'light';
+    }
+    function eraOf(event, eras) {
+      var year = parseInt(event.start_date.year, 10);
+      for (var i = 0; i < eras.length; i++) {
+        if (year >= parseInt(eras[i].start_date.year, 10) && year <= parseInt(eras[i].end_date.year, 10)) {
+          return eras[i].text.headline;
+        }
+      }
+      return null;
+    }
+
+    fetch('data/timeline.json')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var slides = [data.title].concat(data.events);
+        // Work these out before TimelineJS converts the date fields into its own objects.
+        var tones = {}, eraNames = {};
+        slides.forEach(function (s) {
+          tones[s.unique_id] = toneOf(s);
+          eraNames[s.unique_id] = s === data.title ? null : eraOf(s, data.eras);
+        });
+
+        // Same options as the original Google Sheets embed.
+        var timeline = new TL.Timeline('timeline-embed', data, {
+          font: 'default',
+          language: 'en',
+          initial_zoom: 2
+        });
+        window.timeline = timeline;
+        var root = document.getElementById('timeline-embed');
+
+        function decorate() {
+          slides.forEach(function (s) {
+            var el = document.getElementById(s.unique_id);
+            if (!el) return;
+            el.classList.add('tone-' + tones[s.unique_id]);
+            var era = eraNames[s.unique_id];
+            var container = el.querySelector('.tl-text-content-container');
+            // Slide content can be built after the slide shell, so retry until the label is in.
+            if (era && container && !container.querySelector('.tl-era-label')) {
+              var label = document.createElement('p');
+              label.className = 'tl-era-label';
+              label.textContent = era;
+              container.insertBefore(label, container.firstChild);
+            }
+          });
+        }
+        function setCurrent(id) {
+          var tone = tones[id] || 'light';
+          document.body.classList.remove('current-dark', 'current-light');
+          document.body.classList.add('current-' + tone);
+        }
+
+        timeline.on('loaded', function () { decorate(); setCurrent(data.title.unique_id); });
+        timeline.on('change', function (e) { decorate(); setCurrent(e.unique_id); });
+        // Fallback in case slides were built before the listeners attached.
+        setTimeout(function () { decorate(); if (!document.body.className.match(/current-/)) setCurrent(data.title.unique_id); }, 500);
+      });
   </script>
 </body>
 </html>

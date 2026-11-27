@@ -15,8 +15,15 @@ function DateObj($y, $m, $d, $t, $display) {
   return $o
 }
 
+function Slug($text) {
+  $s = ($text.ToLower() -replace "[^a-z0-9]+", '-').Trim('-')
+  return "slide-$s"
+}
+
 function Slide($r) {
   $s = [ordered]@{}
+  # Stable id so index.html can attach era labels and contrast styling to each slide.
+  $s.unique_id = Slug $r.Headline
   $sd = DateObj $r.Year $r.Month $r.Day $r.Time $null
   if ($sd) { $s.start_date = $sd }
   $ed = DateObj $r.'End Year' $r.'End Month' $r.'End Day' $r.'End Time' $null
